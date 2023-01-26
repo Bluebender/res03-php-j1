@@ -42,10 +42,45 @@ echo $str."<br>";
 echo "<h2>Exercice 5</h2>";
 
 $animals = ["Chat", "Chien", "Lapin", "Souris"];
+
 for ($i=0; $i<count($animals); $i++){
     echo "$animals[$i]<br>";
 };
 
+echo "<h2>Exercice 6</h2>";
 
+$numbers = [28, 32, 44, -67, 18, 24, -98];
+
+for ($i=0; $i<count($numbers); $i++){
+    if($numbers[$i]<0){
+        echo "$numbers[$i]<br>";
+    };
+};
+
+echo "<h2>Exercice 7</h2>";
+
+$user = [
+    "firstName" => "Barack",
+    "lastName" => "Obama"
+];
+
+echo "Je suis {$user["firstName"]} {$user["lastName"]}, le 44ème président des USA..";
+
+echo "<h2>Exercice 8</h2>";
+
+$users = [
+    [
+        "firstName" => "Mari",
+        "lastName" => "Doucet"
+    ],
+    [
+        "firstName" => "Hugues",
+        "lastName" => "Froger"
+    ]
+];
+
+foreach ($users as $user){
+    echo "Mr {$user["firstName"]} {$user["lastName"]}<br>";
+};
 
 ?>
